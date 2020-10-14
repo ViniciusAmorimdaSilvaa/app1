@@ -1,0 +1,4 @@
+Criando projeto
+. npx react-native init app1
+. Abrir emulador do Andoid
+. react-native run-android
