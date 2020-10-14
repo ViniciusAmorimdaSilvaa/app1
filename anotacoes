@@ -2,3 +2,13 @@ Criando projeto
 . npx react-native init app1
 . Abrir emulador do Andoid
 . react-native run-android
+
+ESLint, Prettier & EditorConfig
+. Na raix do projeto clicar com o diretiro -> Generate .editorConfig
+. yarn add eslint -D
+. yarn eslint --init
+. deletar arquivo package.lock
+. yarn
+. yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+. react-native start --reset-cache
+
