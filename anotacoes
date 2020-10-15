@@ -12,3 +12,9 @@ ESLint, Prettier & EditorConfig
 . yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 . react-native start --reset-cache
 
+React Navigation
+. https://reactnavigation.org/docs/getting-started
+
+Styled Components
+. yarn add styled-components
+
