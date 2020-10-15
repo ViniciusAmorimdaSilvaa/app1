@@ -18,3 +18,5 @@ React Navigation
 Styled Components
 . yarn add styled-components
 
+Estilizando formulário
+. yarn add react-native-vector-icons
