@@ -27,3 +27,4 @@ Acessando API do Github
 Salvando no Storage
 . yarn add @react-native-community/async-storage
 . yarn run react-native run-android
+. yarn add prop-types
