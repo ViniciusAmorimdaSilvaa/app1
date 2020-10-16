@@ -23,3 +23,7 @@ Estilizando formulário
 
 Acessando API do Github
 . yarn add axios
+
+Salvando no Storage
+. yarn add @react-native-community/async-storage
+. yarn run react-native run-android
