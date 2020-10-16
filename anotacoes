@@ -20,3 +20,6 @@ Styled Components
 
 Estilizando formulário
 . yarn add react-native-vector-icons
+
+Acessando API do Github
+. yarn add axios
