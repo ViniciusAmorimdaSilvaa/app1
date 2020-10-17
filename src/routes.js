@@ -28,7 +28,23 @@ function App() {
             },
           }}
         />
-        <Stack.Screen name="User" component={User} />
+        <Stack.Screen
+          name="User"
+          component={User}
+          options={{
+            title: 'Diego',
+            headerStyle: {
+              backgroundColor: '#7159c1',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 20,
+              flex: 1,
+              textAlign: 'center',
+            },
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
