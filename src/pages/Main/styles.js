@@ -27,7 +27,7 @@ export const Input = styled.TextInput.attrs({
 export const SubmitButton = styled(RectButton)`
   justify-content: center;
   align-items: center;
-  background: #7157c1;
+  background: #7159c1;
   border-radius: 4px;
   margin-left: 10px;
   padding: 0 12px;
@@ -47,7 +47,7 @@ export const User = styled.View`
 
 export const Avatar = styled.Image`
   width: 64px;
-  height: 54px;
+  height: 64px;
   border-radius: 32px;
   background: #eee;
 `;

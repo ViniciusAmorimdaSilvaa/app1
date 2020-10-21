@@ -32,7 +32,7 @@ function App() {
           name="User"
           component={User}
           options={{
-            title: 'Diego',
+            title: 'Usuário',
             headerStyle: {
               backgroundColor: '#7159c1',
             },

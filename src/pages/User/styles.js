@@ -8,7 +8,7 @@ export const Container = styled.View`
 export const Header = styled.View`
   align-items: center;
   padding-bottom: 20px;
-  border-bottom-width: 20px;
+  border-bottom-width: 1px;
   border-color: #eee;
 `;
 
@@ -22,9 +22,9 @@ export const Avatar = styled.Image`
 export const Name = styled.Text`
   font-size: 20px;
   color: #333;
-  font-weight: 18px;
+  font-weight: bold;
   margin-top: 10px;
-  tet-align: center;
+  text-align: center;
 `;
 
 export const Bio = styled.Text`

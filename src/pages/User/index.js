@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import api from '../../services/api';
 
 import {
@@ -17,23 +16,19 @@ import {
 } from './styles';
 
 export default class User extends Component {
-  static navigationOptions = ({ navigation }) => ({
-    title: navigation.getParam('user').name,
-  });
+  constructor(props) {
+    super(props);
 
-  static propTypes = {
-    navigation: PropTypes.shape({
-      getParam: PropTypes.func,
-    }).isRequired,
-  };
-
-  state = {
-    stars: [],
-  };
+    const route = this.props;
+    console.tron.log(route);
+    this.state = {
+      stars: [],
+    };
+  }
 
   async componentDidMount() {
-    const { navigation } = this.props;
-    const user = navigation.getParam('user');
+    const { route } = this.props;
+    const user = route.params;
 
     const response = await api.get(`/users/${user.login}/starred`);
 
@@ -41,17 +36,17 @@ export default class User extends Component {
   }
 
   render() {
-    const { navigation } = this.props;
+    const { route } = this.props;
     const { stars } = this.state;
 
-    const user = navigation.getParam('user');
+    const { name, avatar, bio } = route.params.user;
 
     return (
       <Container>
         <Header>
-          <Avatar source={{ uri: user.avatar }} />
-          <Name>{user.name}</Name>
-          <Bio>{user.bio}</Bio>
+          <Avatar source={{ uri: avatar }} />
+          <Name>{name}</Name>
+          <Bio>{bio}</Bio>
         </Header>
 
         <Stars

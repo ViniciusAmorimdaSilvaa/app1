@@ -20,6 +20,10 @@ import {
 } from './styles';
 
 export default class Main extends Component {
+  static navigationOptions = {
+    title: 'Usuários',
+  };
+
   static propTypes = {
     navigation: PropTypes.shape({
       navigate: PropTypes.func,
@@ -69,12 +73,12 @@ export default class Main extends Component {
     });
 
     Keyboard.dismiss();
-
-    // console.tron.log(this.state.newUser);
   };
 
   handleNavigate = (user) => {
     const { navigation } = this.props;
+
+    // console.tron.log(user);
 
     navigation.navigate('User', { user });
   };
